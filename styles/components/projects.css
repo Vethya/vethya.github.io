@@ -1,0 +1,140 @@
+.projects__title {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+}
+
+.projects__description {
+  max-width: 60ch;
+  color: var(--clr-light);
+  font-size: var(--size-sm);
+  margin: 1rem 0;
+}
+
+.project {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.project__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--clr-light);
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.project__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+}
+
+.project__title {
+  color: var(--clr-light);
+  font-size: var(--size-base);
+}
+
+.project__description {
+  font-size: var(--size-sm);
+  /* color: var(--clr-light); */
+}
+
+.project__github {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project__github-icon {
+  display: block;
+  width: var(--size-base);
+  height: var(--size-base);
+  fill: var(--clr-light);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .projects__title {
+    font-size: var(--size-3xl);
+  }
+
+  .projects__description {
+    font-size: var(--size-base);
+    margin: 1.5rem 0;
+  }
+
+  .project__title {
+    font-size: var(--size-lg);
+  }
+
+  .project__description {
+    font-size: var(--size-base);
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .projects__title {
+    font-size: var(--size-4xl);
+  }
+
+  .projects__description {
+    font-size: var(--size-lg);
+  }
+
+  .project__title {
+    font-size: var(--size-xl);
+  }
+
+  .project__description {
+    font-size: var(--size-lg);
+  }
+
+  .project__github-icon {
+    width: var(--size-lg);
+    height: var(--size-lg);
+  }
+
+  .project__icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .projects__title {
+    font-size: var(--size-5xl);
+  }
+
+  .projects__description {
+    font-size: var(--size-xl);
+    margin: 2rem 0;
+  }
+
+  .project__title {
+    font-size: var(--size-2xl);
+  }
+
+  .project__description {
+    font-size: var(--size-xl);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
